@@ -30,7 +30,7 @@ public class JavaBeanpt1 {
 //	public String toString() {
 //		return "JavaBean1 [id=" + id + "]";
 //	}
-	private int rest_id;
+	//private int rest_id;
 	private String name;
 	private String category;
 	private String addr_city;
@@ -46,12 +46,12 @@ public class JavaBeanpt1 {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getRest_id() {
-		return rest_id;
-	}
-	public void setRest_id(int rest_id) {
-		this.rest_id = rest_id;
-	}
+//	public int getRest_id() {
+//		return rest_id;
+//	}
+//	public void setRest_id(int rest_id) {
+//		this.rest_id = rest_id;
+//	}
 	public String getCategory() {
 		return category;
 	}
@@ -97,7 +97,7 @@ public class JavaBeanpt1 {
 	}
 	@Override
 	public String toString() {
-		return "JavaBeanpt1 [rest_id=" + rest_id + ", name=" + name + ", category=" + category + ", addr_city="
+		return "JavaBeanpt1 [name=" + name + ", category=" + category + ", addr_city="
 				+ addr_city + ", addr_district=" + addr_district + ", addr_etc=" + addr_etc + ", rest_tel=" + rest_tel
 				+ ", runtime=" + runtime + ", dayoff=" + dayoff + "]";
 	}
