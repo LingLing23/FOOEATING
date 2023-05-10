@@ -157,7 +157,7 @@ $(document).ready(function(){
 	<h1>ownerChangeform.jsp</h1>
 	<fieldset>
 		<legend><b>step1</b></legend>
-		<form action="./ownerChangeForm2.on" id="fr" name="fr" method="post">
+		<form action="./ownerChangeForm2.on" id="fr" name="fr" method="post" enctype="multipart/form-data">
 		사업자등록 번호 <br>
 		<input type="text" id ="rest_id" name ="rest_id" placeholder="- 빼고 입력해주세요." maxlength="10"><br>
 	    <div id="divbpw"></div>

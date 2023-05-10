@@ -8,7 +8,7 @@ public class JavaBeanpt3 {
 	private String price;
 	private String file;
 	public String getName() {
-		return name;
+		return name;	
 	}
 	public void setName(String name) {
 		this.name = name;
