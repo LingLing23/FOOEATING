@@ -12,11 +12,10 @@
 <body>
      <% request.setCharacterEncoding("UTF-8"); %>
      
-     <jsp:useBean id="ow3" class="com.fooeating.javabean.JavaBeanpt3" />
-	 <jsp:setProperty property="*" name="ow3"/> 
+   
      ${ow1 }
      ${ow2 }
-     <%=ow3 %>
+    
      
      
 	<h1>ownerChangeForm4.jsp</h1>

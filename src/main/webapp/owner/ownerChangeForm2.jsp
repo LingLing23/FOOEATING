@@ -105,13 +105,19 @@
 		<br>
 		편의 시설 <br>
 		<input type="hidden" name="dayoff" value="<%=dayoff %>">
+		<input type="hidden" name="runtime" value="<%=runtime %>">
+		<input type="hidden" name="name" value="<%=name %>">
+		<input type="hidden" name="category" value="<%=category %>">
+		<input type="hidden" name="addr_city" value="<%=addr_city %>">
+		<input type="hidden" name="addr_district" value="<%=addr_district %>">
+		<input type="hidden" name="addr_etc" value="<%=addr_etc %>">
+		<input type="hidden" name="rest_tel" value="<%=rest_tel %>">
 		<input type="checkbox" name="convenience" value="parking" > 주차 공간
 		<input type="checkbox" name="convenience" value="toilet" > 화장실 (남/여) <br>
 		<input type="checkbox" name="convenience" value="nokidszone" > 노키즈존
 		<input type="checkbox" name="convenience" value="takeout" > 포장 가능 <br>
 		<input type="checkbox" name="convenience" value="animal" > 반려 동물
-		<input type="checkbox" name="convenience" value="wifi" > 와이파이 <br>
-		<input type="hidden" value="ow1" name="ow1" > 
+		<input type="checkbox" name="convenience" value="wifi" > 와이파이 <br> 
 		<br>    
 		<input type="button" value="이전" onclick="location.href='ownerChangeForm.on'">
 		<input type="submit" value="다음" >
