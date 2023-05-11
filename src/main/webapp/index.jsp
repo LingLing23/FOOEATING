@@ -9,7 +9,6 @@
 <body>
 
 
-
 <h1>index.jsp</h1>
 
 
@@ -21,10 +20,11 @@
 	
 	// 가상주소 바로가기
 // 	response.sendRedirect("./가상주소.foo");
-// 	response.sendRedirect("./MemberLogin.foo");
 	response.sendRedirect("./Main.foo");
+// 	response.sendRedirect("./MyPageMember.foo");
+// 	response.sendRedirect("./NoticeList.foo");
+// 	response.sendRedirect("./FaqList.foo");
 
-	
 	
 	// -> webapp 폴더 밑에 있는 해당 가상주소로 이동
 	// -> 가상주소는 MemberFrontController.java에서 서블릿으로 매핑했으므로 해당 페이지로 이동.
