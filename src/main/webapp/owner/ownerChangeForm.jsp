@@ -76,6 +76,7 @@ function sample4_execDaumPostcode() {
 
 <script src="./js/jquery-3.6.4.js"></script>
 <script type="text/javascript">
+
 $(document).ready(function(){
 	
 	    $('div').css({
@@ -151,7 +152,7 @@ $(document).ready(function(){
 });
 	
 </script>
-<title>Insert title here</title>
+ 
 </head>
 <body>
 	<h1>ownerChangeform.jsp</h1>

@@ -10,7 +10,10 @@
 <title>ownerChangerForm2.jsp</title>
 <script src="./js/jquery-3.6.4.js"></script>
 <script type="text/javascript">
- $(document).ready(function(){
+
+
+
+ /* $(document).ready(function(){
 
     $('div').css({
         'font-size' : '0.7em',
@@ -27,7 +30,9 @@
 		  }
 	
 	  });
-});
+}); */
+ 
+ 
  
 
 </script>
@@ -39,8 +44,7 @@
 		  
 		  <%
 		  request.setCharacterEncoding("UTF-8");
-		  %>
-		<%
+		
          // 업로드된 파일이 저장될 공간 => upload 폴더생성
          String uploadPath = request.getRealPath("/upload");
          	System.out.println(uploadPath);
@@ -69,9 +73,8 @@
           // String file = request.getParameter("file");
           // String file = multi.getParameter("file");
             
-          String file_out = multi.getFilesystemName("file_out");
-        //	private String name;
-
+       
+          // private String name;
           String name = multi.getParameter("name");  
           String category = multi.getParameter("category");  
           String addr_city = multi.getParameter("addr_city");  
@@ -99,9 +102,9 @@
 		<div id="divdes"></div>
 		<br>
 		이미지 첨부(가게 외관, 내부, 메뉴판) <br>
-	    <input type="file" name="file_out" value="<%=file_out%>"><br>
+	    <input type="file" name="file_out" ><br>
 		<input type="file" name="file_in" ><br>
-		<input type="file" name="file_menu"><br>
+		<input type="file" name="file_menu" ><br>
 		<br>
 		편의 시설 <br>
 		<input type="hidden" name="dayoff" value="<%=dayoff %>">
@@ -119,7 +122,6 @@
 		<input type="checkbox" name="convenience" value="animal" > 반려 동물
 		<input type="checkbox" name="convenience" value="wifi" > 와이파이 <br> 
 		<br>    
-		<input type="button" value="이전" onclick="location.href='ownerChangeForm.on'">
 		<input type="submit" value="다음" >
 		</form>
 

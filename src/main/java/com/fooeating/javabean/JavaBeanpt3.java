@@ -2,7 +2,7 @@ package com.fooeating.javabean;
 
 
 public class JavaBeanpt3 {
-
+    
 	private String name;
 	private String descriptions;
 	private String price;

@@ -10,16 +10,36 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>onerChangeForm3.jsp</title>
+<!-- <script src="./js/jquery-3.6.4.js"></script>
+<script type="text/javascript">
 
+$(document).ready(function(){
+	
+	$('div').css({
+        'font-size' : '0.7em',
+        'color' : 'red'
+    });
+	  $("#fr").on("submit", function(e){
+		  let menu_name1 = document.fr.menu_name1.value;
+		  let menu_descriptions1 = document.fr.menu_descriptions1.value;
+		  let price1 = document.fr.price1.value;
+		  
+	
+		  if(descriptions == ""){
+	        	 $('#divdes').html("가게소개를 입력해주세요!");
+	        	 alert("빈칸!!");
+	        	 e.preventDefault();
+		  }
+	
+	  });
+	
+});
+
+</script> -->
+<title>onerChangeForm3.jsp</title>
 <body>
 	<% request.setCharacterEncoding("UTF-8");
 
-     %>
-
-
-       
-           <%
          // 업로드된 파일이 저장될 공간 => upload 폴더생성
          
          String uploadPath = application.getRealPath("/upload");
@@ -96,6 +116,8 @@
           <%=descriptions %>
  
            <img src="./upload/<%=file_out%>"><br>	
+           <img src="./upload/<%=file_in%>"><br>	
+           <img src="./upload/<%=file_menu%>"><br>	
           
           ${file_out }
           <br>
@@ -106,27 +128,24 @@
 	
 	<fieldset>
 		<legend>step3</legend>
-		<form action="./ownerChangeForm4.on" method="post" enctype="multipart/form-data">
+		<form action="./ownerChangeForm4.on" method="post" enctype="multipart/form-data" name="fr" id="fr">
 			1. <br>
-			메뉴 이름 : <input type="text" name="name"> <br>
-			메뉴 소개 : <input type="text" name="menu_descriptions"> <br>
-			메뉴 가격 : <input type="text" name="price"> <br>
-			<input type="text"> 
-			<input type="button" value="첨부파일"> <br>
+			메뉴 이름 : <input type="text" name="menu_name1"> <br>
+			메뉴 소개 : <input type="text" name="menu_descriptions1"> <br>
+			메뉴 가격 : <input type="text" name="price1"> <br>
+			<input type="file" name="file1"> <br>
 			<br>
 			2. <br>
-			메뉴 이름 : <input type="text" name="name"> <br>
-			메뉴 소개 : <input type="text" name="menu_descriptions"> <br>
-			메뉴 가격 : <input type="text" name="price"> <br>
-			<input type="text"> 
-			<input type="button" value="첨부파일"> <br>
+			메뉴 이름 : <input type="text" name="menu_name2"> <br>
+			메뉴 소개 : <input type="text" name="menu_descriptions2"> <br>
+			메뉴 가격 : <input type="text" name="price2"> <br>
+			<input type="file" name="file2"> <br>
 			<br>
 			3. <br>
-			메뉴 이름 : <input type="text" name="name"> <br>
-			메뉴 소개 : <input type="text" name="menu_descriptions"> <br>
-			메뉴 가격 : <input type="text" name="price"> <br>
-			<input type="text"> 
-			<input type="button" value="첨부파일"> <br>
+			메뉴 이름 : <input type="text" name="menu_name3"> <br>
+			메뉴 소개 : <input type="text" name="menu_descriptions3"> <br>
+			메뉴 가격 : <input type="text" name="price3"> <br>
+			<input type="file" name="file3"> <br>
 			<br>
 			<input type="hidden" name="dayoff" value="<%=dayoff %>">
 		    <input type="hidden" name="runtime" value="<%=runtime %>">
@@ -139,7 +158,7 @@
 		    <input type="hidden" name="file_out" value="<%=file_out %>">
 		    <input type="hidden" name="file_in" value="<%=file_in %>">
 		    <input type="hidden" name="file_menu" value="<%=file_menu %>">
-			<input type="button" value="이전" onclick="location.href='ownerChangeForm2.on'">
+		    <input type="hidden" name="name" value="<%=name%>">	    
 			<input type="submit" value="다음" >
 		</form>
 	</fieldset>
